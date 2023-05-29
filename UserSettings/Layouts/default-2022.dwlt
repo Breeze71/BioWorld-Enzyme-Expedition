@@ -121,7 +121,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 127
+  controlID: 94
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -754,7 +754,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.4446741, y: 0.0018779703, z: -0.0009327315, w: -0.8956949}
     speed: 2
-    m_Value: {x: -0.44467214, y: 0.001877962, z: -0.00093272736, w: -0.895691}
+    m_Value: {x: -0.4446741, y: 0.0018779703, z: -0.0009327315, w: -0.89569485}
   m_Size:
     m_Target: 10.81514
     speed: 2
@@ -976,17 +976,16 @@ MonoBehaviour:
     m_OriginalText: 
   m_ViewMode: 0
   m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Scripts
+  m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\progrmaing\unity game\UnityLearning\KitchenChaos\KitchenChoas\KitchenChaosTut
+  m_LastProjectPath: C:\progrmaing\unity game\BioWorld-Enzyme-Expedition
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 16690000
     m_LastClickedID: 26902
-    m_ExpandedIDs: 0000000028750000b8750000e2800000e4800000e6800000e8800000ea800000ec800000ee800000f0800000f2800000
+    m_ExpandedIDs: 0000000030750000c0750000ea800000ec800000ee800000f0800000f2800000f4800000f6800000f8800000fa800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1014,7 +1013,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000028750000b8750000e2800000e4800000e6800000e8800000ea800000ec800000ee800000f0800000f2800000
+    m_ExpandedIDs: ffffffff0000000030750000c0750000ea800000ec800000ee800000f0800000f2800000f4800000f6800000f8800000fa800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1102,7 +1101,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 40c5fbff
+      m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 10fbffff
       m_RenameOverlay:
