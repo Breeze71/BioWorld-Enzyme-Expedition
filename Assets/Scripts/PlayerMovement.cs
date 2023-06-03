@@ -194,6 +194,8 @@ public class PlayerMovement : MonoBehaviour, IKitchenObjParent
         });
     }
 
+
+    #region Interface
     /* IKitchenObj Interface */
     public Transform GetKitchenObjectFollowTransform()
     {
@@ -219,4 +221,5 @@ public class PlayerMovement : MonoBehaviour, IKitchenObjParent
     {
         return kitchenObj != null;
     }
+    #endregion
 }
