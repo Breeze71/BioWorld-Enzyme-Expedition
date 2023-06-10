@@ -34,7 +34,26 @@ public class SoundManager : MonoBehaviour
         BaseCounter.OnAnyObjDropSound += BaseCounter_OnAnyObjDropSound;
 
         TrashCounter.OnAnyObjTrashedSound += TrashCounter_OnAnyObjTrashedSound;
+
+
+        InCorrectAcid.OnIncorrectPlace += InCorrectAcid_OnIncorectPlace;
+        CorrectAcid.OnCorrectPlace += CorrectAcid_OnCorrectPlace;
     }
+
+
+    /* Acid sound */
+    private void InCorrectAcid_OnIncorectPlace(object sender, EventArgs e)
+    {
+        InCorrectAcid inCorrectAcid = sender as InCorrectAcid;
+        PlaySound(audioClipSO.deliveryFailed, inCorrectAcid.transform.position);
+    }
+    private void CorrectAcid_OnCorrectPlace(object sender, EventArgs e)
+    {
+        CorrectAcid correctAcid = sender as CorrectAcid;
+
+        PlaySound(audioClipSO.deliverySuccess, correctAcid.transform.position);
+    }
+    //
 
     private void TrashCounter_OnAnyObjTrashedSound(object sender, EventArgs e)
     {
