@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour
     }
 
     // return gameState
+    # region gameState
     public bool IsGamePlaying()
     {
         return gameState == GameState.gamePlaying;
@@ -103,7 +104,8 @@ public class GameManager : MonoBehaviour
     {
         return 1 - (gamePlayingTimer / gamePlayingTimerMax);
     }
-
+    #endregion
+    
     public void Pause_Resume()
     {
         isPaused = !isPaused;

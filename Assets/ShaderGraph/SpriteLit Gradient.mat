@@ -8,28 +8,33 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SpriteLit Gradient
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_Parent: {fileID: 2100000, guid: 61e708550f0d3b948a3da4e6f1943030, type: 2}
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 2100000, guid: 5a92d08a53a696f41b20d84ea487ab16, type: 2}
   m_ModifiedSerializedProperties: 18
-  m_ValidKeywords:
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - UNITY_UI_ALPHACLIP
   - _EMISSION
-  m_InvalidKeywords: []
+  - _SUNDISK_HIGH_QUALITY
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats: []
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.18950066, g: 0.0069597573, b: 0.21698111, a: 1}
     - _EmissionColor: {r: 1, g: 0.031372547, b: 0.5298594, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &4405103259178114563

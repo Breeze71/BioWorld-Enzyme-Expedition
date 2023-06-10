@@ -19,7 +19,8 @@ public class GameOverUI : MonoBehaviour
         {
             Show();
 
-            recipeDeliverdText.text = DeliveryManager.Instance.GetSuccessfulRecipe().ToString();
+            recipeDeliverdText.text = Score.Instance.GetCurrentScore().ToString();
+            //recipeDeliverdText.text = DeliveryManager.Instance.GetSuccessfulRecipe().ToString();
         }
         else
         {
