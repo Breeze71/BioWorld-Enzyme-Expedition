@@ -11,7 +11,10 @@ public static class Loader
     {
         MainMenu,
         LoadingScene,
-        GameScene
+        SelectGameScene,
+        Chapter1,
+        Chapter2
+
     }
     private static void Update() 
     {

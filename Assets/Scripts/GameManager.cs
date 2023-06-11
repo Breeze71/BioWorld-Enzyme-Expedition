@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     # region variable
     private GameState gameState;
-    private float countdownToStartTimer = 3f;
+    private float countdownToStartTimer = 0f;
     private float gamePlayingTimer;
     [SerializeField] private float gamePlayingTimerMax = 15f;
     
