@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a23710f961e1fd54a8566e23cb0bc8b3, type: 3}
-  m_Name: SugerSO
+  m_Name: Suger(
   m_EditorClassIdentifier: 
   prefab: {fileID: 8664252186594240673, guid: 0a60aa5e8d70478429e7d207724429bf, type: 3}
-  sprite: {fileID: 21300000, guid: 256b17f65ca4560449866be321c6b6b2, type: 3}
-  objName: "\u7CD6\u57FA"
+  sprite: {fileID: 0}
+  objName: SugerThr
