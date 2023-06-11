@@ -18,11 +18,11 @@ public class SelectChapterUI : MonoBehaviour
 
         chapter2_Button.onClick.AddListener(() =>
         {
-            Loader.LoadScene(Loader.Scene.Chapter2);
+            //Loader.LoadScene(Loader.Scene.Chapter2);
         });
         chapter3_Button.onClick.AddListener(() =>
         {
-            //
+            Loader.LoadScene(Loader.Scene.Chapter3);
         });
         Time.timeScale = 1f;
     }

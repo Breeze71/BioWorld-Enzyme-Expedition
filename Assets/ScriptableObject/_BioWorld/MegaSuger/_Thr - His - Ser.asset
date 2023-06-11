@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a23710f961e1fd54a8566e23cb0bc8b3, type: 3}
-  m_Name: Suger(Thr
+  m_Script: {fileID: 11500000, guid: 905aecbff72c92d45909e137e7b9bd34, type: 3}
+  m_Name: _Thr - His - Ser
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8664252186594240673, guid: 0a60aa5e8d70478429e7d207724429bf, type: 3}
-  sprite: {fileID: 21300000, guid: ce780183ef3835046ae9e731bb7abe05, type: 3}
-  objName: SugerThr
+  kitchenObjSOList:
+  - {fileID: 11400000, guid: 7f7f7a57135cfe94bbeeafdecee36740, type: 2}
+  - {fileID: 11400000, guid: d58f1efa5a016064b9fae981dcc4ec1b, type: 2}
+  recipeName: 2

@@ -177,7 +177,11 @@ public class PlayerMovement : MonoBehaviour, IKitchenObjParent
 
         // Slerp 圓弧插值，連同向量角度一起
         float rotateSpeed = 10f;
-        transform.forward = Vector3.Slerp(transform.forward, moveDirection, Time.deltaTime * rotateSpeed);
+
+        if(isWalking)
+        {
+            transform.forward = Vector3.Slerp(transform.forward, moveDirection, Time.deltaTime * rotateSpeed);
+        }
     }
 
     public bool IsWalking()

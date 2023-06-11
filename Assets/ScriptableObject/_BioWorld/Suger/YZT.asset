@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9539361e03e10d4a9a911c92609103b, type: 3}
-  m_Name: _AminoSOList
+  m_Script: {fileID: 11500000, guid: a23710f961e1fd54a8566e23cb0bc8b3, type: 3}
+  m_Name: YZT
   m_EditorClassIdentifier: 
-  recipeSOList:
-  - {fileID: 11400000, guid: 47d71e79ae492e3469c0e39cbf146cc5, type: 2}
-  - {fileID: 11400000, guid: 437c22c184396cc44856065ece156abf, type: 2}
+  prefab: {fileID: 8664252186594240673, guid: 85659be0b2fe2b1458d3209ea99f4d41, type: 3}
+  sprite: {fileID: 21300006, guid: 358b5d9f23bc9413e87c9948acc67ee1, type: 3}
+  objName: 

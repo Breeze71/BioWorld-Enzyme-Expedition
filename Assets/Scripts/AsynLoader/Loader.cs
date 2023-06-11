@@ -13,8 +13,8 @@ public static class Loader
         LoadingScene,
         SelectGameScene,
         Chapter1,
-        Chapter2
-
+        Chapter2,
+        Chapter3,
     }
     private static void Update() 
     {

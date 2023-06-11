@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4946702253108611394}
   - component: {fileID: 8194185460764600516}
   m_Layer: 0
-  m_Name: Suger(
+  m_Name: BRT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b17567a4b031fe74793c36c7099efa5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kitchenObjSO: {fileID: 11400000, guid: 4c7fa959b50ee1143bb93ad0fe034b21, type: 2}
+  kitchenObjSO: {fileID: 11400000, guid: 7f7f7a57135cfe94bbeeafdecee36740, type: 2}
 --- !u!114 &8194185460764600516
 MonoBehaviour:
   m_ObjectHideFlags: 0

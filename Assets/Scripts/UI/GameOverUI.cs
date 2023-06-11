@@ -4,6 +4,7 @@ using TMPro;
 
 public class GameOverUI : MonoBehaviour
 {
+    [SerializeField] private Score playerScore;
     [SerializeField] private TextMeshProUGUI recipeDeliverdText;
 
     private void Start() 
@@ -19,7 +20,7 @@ public class GameOverUI : MonoBehaviour
         {
             Show();
 
-            recipeDeliverdText.text = Score.Instance.GetCurrentScore().ToString();
+            recipeDeliverdText.text = playerScore.GetCurrentScore().ToString();
             //recipeDeliverdText.text = DeliveryManager.Instance.GetSuccessfulRecipe().ToString();
         }
         else

@@ -6,11 +6,7 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
-    public static Score Instance
-    {
-        get;
-        private set;
-    }
+
     [SerializeField] private TextMeshPro scoreText;
     private int currentScore;
 

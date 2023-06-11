@@ -32,7 +32,6 @@ public class AcidDeliveryResultUI : MonoBehaviour
 
         iconImg.sprite = failedSprite;
         iconImg.color = failedColor;
-        Debug.Log("incorrect");
 
         anim.SetTrigger(Popup);
     }
@@ -43,7 +42,6 @@ public class AcidDeliveryResultUI : MonoBehaviour
 
         iconImg.color = successColor;
         iconImg.sprite = successSprite;
-        Debug.Log("correct");
 
         anim.SetTrigger(Popup);  
     }

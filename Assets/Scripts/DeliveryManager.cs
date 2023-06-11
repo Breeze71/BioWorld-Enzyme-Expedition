@@ -22,8 +22,8 @@ public class DeliveryManager : MonoBehaviour
     # region variable
     private List<RecipeSO> waitingRecipeSOList;
     private float spawnRecipeTimer;
-    private float spawnRecipeTimerMax = 5f;
-    private int waitingRecipesMax = 4;
+    [SerializeField] private float spawnRecipeTimerMax = 5f;
+    [SerializeField] int waitingRecipesMax = 4;
     private int successfulRecipeAmount;
     # endregion
 

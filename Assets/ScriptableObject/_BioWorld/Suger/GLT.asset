@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a23710f961e1fd54a8566e23cb0bc8b3, type: 3}
-  m_Name: Suger(Gly
+  m_Name: GLT
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8664252186594240673, guid: ed72c20620062d7419cfb232f23b712a, type: 3}
-  sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  objName: SugerGly
+  prefab: {fileID: 8664252186594240673, guid: 0a60aa5e8d70478429e7d207724429bf, type: 3}
+  sprite: {fileID: 21300000, guid: 91e8fe3de9249fc44b7bdd8050062896, type: 3}
+  objName: SugerThr
