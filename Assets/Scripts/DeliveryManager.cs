@@ -11,6 +11,8 @@ public class DeliveryManager : MonoBehaviour
     public event EventHandler OnRecipeSuccess;
     public event EventHandler OnRecipeFailed;
 
+    private int i = 0;
+
     public static DeliveryManager Instance
     {
         get;
@@ -42,15 +44,34 @@ public class DeliveryManager : MonoBehaviour
         {
             spawnRecipeTimer = spawnRecipeTimerMax;
             
-            // 如果目前訂單數小於 waitingRecipesMax  && isPlaying() 隨機生成
             if(GameManager.Instance.IsGamePlaying() && waitingRecipeSOList.Count < waitingRecipesMax)
-            {
-                RecipeSO waitingRecipeSO = recipeListSO.recipeSOList[UnityEngine.Random.Range(0, recipeListSO.recipeSOList.Count)];
-                waitingRecipeSOList.Add(waitingRecipeSO);
+            {   
 
+                RecipeSO waitingRecipeSO = recipeListSO.recipeSOList[i];
+                
+                waitingRecipeSOList.Add(waitingRecipeSO);
+                
                 // event
                 OnRecipeSpawned?.Invoke(this, EventArgs.Empty);
+
+                i++;
+               
             }
+
+
+
+
+
+            //为了让他顺序出，小改了一下代码，下面是你的那个
+            // 如果目前訂單數小於 waitingRecipesMax  && isPlaying() 隨機生成
+            // if(GameManager.Instance.IsGamePlaying() && waitingRecipeSOList.Count < waitingRecipesMax)
+            // {
+            //     RecipeSO waitingRecipeSO = recipeListSO.recipeSOList[UnityEngine.Random.Range(0, recipeListSO.recipeSOList.Count)];
+            //     waitingRecipeSOList.Add(waitingRecipeSO);
+
+            //     // event
+            //     OnRecipeSpawned?.Invoke(this, EventArgs.Empty);
+            // }
         }
     }
 

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: YZT
   m_EditorClassIdentifier: 
   prefab: {fileID: 8664252186594240673, guid: 85659be0b2fe2b1458d3209ea99f4d41, type: 3}
-  sprite: {fileID: 21300006, guid: 358b5d9f23bc9413e87c9948acc67ee1, type: 3}
+  sprite: {fileID: -1570478141, guid: d145f5ca83c0ba744b6257d3c4555862, type: 3}
   objName: 

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: GLT
   m_EditorClassIdentifier: 
   prefab: {fileID: 8664252186594240673, guid: 0a60aa5e8d70478429e7d207724429bf, type: 3}
-  sprite: {fileID: 21300000, guid: 91e8fe3de9249fc44b7bdd8050062896, type: 3}
+  sprite: {fileID: 476107638, guid: d145f5ca83c0ba744b6257d3c4555862, type: 3}
   objName: SugerThr

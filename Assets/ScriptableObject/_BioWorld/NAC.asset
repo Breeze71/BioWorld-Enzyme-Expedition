@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: NAC
   m_EditorClassIdentifier: 
   prefab: {fileID: 8664252186594240673, guid: 41f1aef4332c0b146afc2f063dd1a51e, type: 3}
-  sprite: {fileID: 0}
+  sprite: {fileID: 1980104835, guid: d145f5ca83c0ba744b6257d3c4555862, type: 3}
   objName: NAC

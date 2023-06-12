@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BRT
   m_EditorClassIdentifier: 
   prefab: {fileID: 8664252186594240673, guid: 117a5564c67f48d44bbbc9fd1d726a92, type: 3}
-  sprite: {fileID: 21300012, guid: 358b5d9f23bc9413e87c9948acc67ee1, type: 3}
+  sprite: {fileID: -407760581, guid: d145f5ca83c0ba744b6257d3c4555862, type: 3}
   objName: Galactose

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a23710f961e1fd54a8566e23cb0bc8b3, type: 3}
-  m_Name: TYT
+  m_Name: error
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8664252186594240673, guid: ed72c20620062d7419cfb232f23b712a, type: 3}
-  sprite: {fileID: 19808423, guid: d145f5ca83c0ba744b6257d3c4555862, type: 3}
-  objName: Sialose
+  prefab: {fileID: 8664252186594240673, guid: 85659be0b2fe2b1458d3209ea99f4d41, type: 3}
+  sprite: {fileID: 21300000, guid: 0d6e1281049dccc4189bf308b2ccf331, type: 3}
+  objName: 

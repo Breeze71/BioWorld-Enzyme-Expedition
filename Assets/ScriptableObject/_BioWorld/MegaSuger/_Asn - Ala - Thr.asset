@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: _Asn - Ala - Thr
   m_EditorClassIdentifier: 
   kitchenObjSOList:
+  - {fileID: 11400000, guid: 0e85237307ad8f94b8d3c5031e37bd1a, type: 2}
   - {fileID: 11400000, guid: 4c7fa959b50ee1143bb93ad0fe034b21, type: 2}
   - {fileID: 11400000, guid: 07677d4aa24d53f4bb87d6d2c37db59c, type: 2}
-  recipeName: 1
+  recipeName: Asn-Ala-Thr-connect
