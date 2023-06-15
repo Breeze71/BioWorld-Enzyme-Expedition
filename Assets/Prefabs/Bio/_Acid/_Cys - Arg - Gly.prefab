@@ -127,7 +127,7 @@ PrefabInstance:
         type: 3}
       propertyPath: baseCounter
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1625458451994484594}
     - target: {fileID: 6825124957172363478, guid: 0303ee13974026c4ba729f1165133dc2,
         type: 3}
       propertyPath: visualGameObjArray.Array.data[0]
@@ -270,7 +270,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1116927589552628926, guid: 0303ee13974026c4ba729f1165133dc2,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6589007615290718989}
+      addedObject: {fileID: 1625458451994484594}
   m_SourcePrefab: {fileID: 100100000, guid: 0303ee13974026c4ba729f1165133dc2, type: 3}
 --- !u!4 &1529643943294992123 stripped
 Transform:
@@ -284,7 +284,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1190103181976331803}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6589007615290718989
+--- !u!114 &1625458451994484594
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,11 +293,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2234919219044860581}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40fd09c711dc8024d92cd852be55eb57, type: 3}
+  m_Script: {fileID: 11500000, guid: a0a9fd60d88fdca4aaede4dd97782ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counterTopPoint: {fileID: 1529643943294992123}
   acidDeliveryResultUI: {fileID: 374485106929310752}
+  correctSugerRecipeSO: {fileID: 11400000, guid: f0bff7bbe5bca054a9a102cf63e4acf5,
+    type: 2}
+  DestoryGamePrefabs: {fileID: 6088295524532576497}
 --- !u!4 &8477536622743319731 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7287486299164381864, guid: 0303ee13974026c4ba729f1165133dc2,

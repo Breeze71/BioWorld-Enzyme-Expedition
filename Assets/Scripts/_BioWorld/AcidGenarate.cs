@@ -1,29 +1,39 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class AcidGenarate : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> AcidList;
-    [SerializeField] private Transform generateTrans;
-    [SerializeField] private float generateTimerMax = 5;
-    private float generateTimer;
-
-    private void Update() 
+    [Serializable]
+    public struct Acid_WaitingRecipeSO
     {
-        generateTimer -= Time.deltaTime;
-        if(generateTimer <= 0)
+        public GameObject acid;
+        public RecipeSO waitingRecipeSO;
+    }
+    [Header("Acid To WaitingRecipeSO")]
+    [SerializeField] private List<Acid_WaitingRecipeSO> acid_WaitingRecipeSOList;
+
+
+    [Header("Generate")]
+    [SerializeField] private Transform generateTransform;
+
+
+    private void Start() 
+    {
+        DeliveryManager.Instance.OnRecipeSpawned += DeliveryManager_OnRecipeSpawned;
+    }
+
+    private void DeliveryManager_OnRecipeSpawned(object sender, DeliveryManager.OnRecipeSpawnedEventArgs e)
+    {
+        RecipeSO generateAcid = e.generateRecipeSO;
+
+        foreach(Acid_WaitingRecipeSO acid_WaitingRecipeSO in acid_WaitingRecipeSOList)
         {
-            generateTimer = generateTimerMax;
-
-            GenarateAcid();
-        }    
+            if(acid_WaitingRecipeSO.waitingRecipeSO == generateAcid)
+            {
+                Instantiate(acid_WaitingRecipeSO.acid, generateTransform);
+            }
+        }
     }
 
-    private void GenarateAcid()
-    {
-        GameObject acid = AcidList[UnityEngine.Random.Range(0, AcidList.Count)];
-        GameObject iconTransform = Instantiate(acid, generateTrans);
-    }
 }

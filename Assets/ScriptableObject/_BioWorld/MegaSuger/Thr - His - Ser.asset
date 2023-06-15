@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905aecbff72c92d45909e137e7b9bd34, type: 3}
+  m_Name: Thr - His - Ser
+  m_EditorClassIdentifier: 
+  kitchenObjSOList:
+  - {fileID: 11400000, guid: 7f7f7a57135cfe94bbeeafdecee36740, type: 2}
+  - {fileID: 11400000, guid: d58f1efa5a016064b9fae981dcc4ec1b, type: 2}
+  recipeName: Thr-His-Ser-connect

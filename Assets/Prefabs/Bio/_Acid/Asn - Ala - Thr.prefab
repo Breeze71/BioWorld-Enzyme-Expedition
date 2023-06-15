@@ -90,6 +90,11 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 3350238537574599607, guid: 05aeeb2ec8988804eb786f5a9c31129c,
+        type: 3}
+      propertyPath: baseCounter
+      value: 
+      objectReference: {fileID: 8224636050974470217}
     - target: {fileID: 3653318328000341485, guid: 05aeeb2ec8988804eb786f5a9c31129c,
         type: 3}
       propertyPath: m_RootOrder
@@ -1695,10 +1700,15 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6905652762412963987, guid: 05aeeb2ec8988804eb786f5a9c31129c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9172101218087083999, guid: 05aeeb2ec8988804eb786f5a9c31129c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8224636050974470217}
   m_SourcePrefab: {fileID: 100100000, guid: 05aeeb2ec8988804eb786f5a9c31129c, type: 3}
 --- !u!4 &1245565766081992244 stripped
 Transform:
@@ -1718,3 +1728,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89852be62e785904485d2d1e2e6981ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &6236834122797682776 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8464442149859107713, guid: 05aeeb2ec8988804eb786f5a9c31129c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2592405283424056281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6679906596955630598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9172101218087083999, guid: 05aeeb2ec8988804eb786f5a9c31129c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2592405283424056281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8224636050974470217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679906596955630598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a9fd60d88fdca4aaede4dd97782ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counterTopPoint: {fileID: 6236834122797682776}
+  acidDeliveryResultUI: {fileID: 1550900365634447504}
+  correctSugerRecipeSO: {fileID: 11400000, guid: 5946fdac51654f34881a2dcce90cd8f1,
+    type: 2}
+  DestoryTimerMax: 50
+  DestoryGamePrefabs: {fileID: 2033191457335562304}
+  waitingRecipeSOList: []

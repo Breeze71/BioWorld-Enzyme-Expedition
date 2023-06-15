@@ -15,8 +15,21 @@ public class DeliveryManagerUI : MonoBehaviour
     private void Start() 
     {
         DeliveryManager.Instance.OnRecipeSpawned += DeliveryManager_OnRecipeSpawned;
-        DeliveryManager.Instance.OnRecipeCompleted += DeliveryManager_OnRecipeCompleted;
+        //DeliveryManager.Instance.OnRecipeCompleted += DeliveryManager_OnRecipeCompleted;
 
+        DeliveryAcid.OnCorrectPlace += DeliveryManager_OnCorrectPlace;
+        DeliveryAcid.OnWaitingRecipeSOListChanged += DeliveryAcid_OnWaitingRecipeSOListChanged;
+
+        UpdateIcon();
+    }
+
+    private void DeliveryManager_OnCorrectPlace(object sender, EventArgs e)
+    {
+        UpdateIcon();
+    }
+
+    private void DeliveryAcid_OnWaitingRecipeSOListChanged(object sender, EventArgs e)
+    {
         UpdateIcon();
     }
 

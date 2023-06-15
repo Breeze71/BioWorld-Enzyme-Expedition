@@ -4,20 +4,21 @@ using System;
 
 public class DeliveryManager : MonoBehaviour
 {
-    public event EventHandler OnRecipeSpawned;
-    public event EventHandler OnRecipeCompleted;
+
+    public event EventHandler<OnRecipeSpawnedEventArgs> OnRecipeSpawned;
+    public class OnRecipeSpawnedEventArgs : EventArgs
+    {
+        public RecipeSO generateRecipeSO;
+    }
+    
+    //public event EventHandler OnRecipeCompleted;
 
     // sound event 
     public event EventHandler OnRecipeSuccess;
     public event EventHandler OnRecipeFailed;
 
-    private int i = 0;
 
-    public static DeliveryManager Instance
-    {
-        get;
-        private set;
-    }
+    public static DeliveryManager Instance{ get; private set;}
 
     [SerializeField] private RecipeListSO recipeListSO;
 
@@ -36,6 +37,16 @@ public class DeliveryManager : MonoBehaviour
         waitingRecipeSOList = new List<RecipeSO>();
     }
 
+    // OnWaitingRecipeSOListChanged
+    private void Start() 
+    {
+        DeliveryAcid.OnWaitingRecipeSOListChanged += DeliveryAcid_OnWaitingRecipeSOListChanged;
+    }
+    private void DeliveryAcid_OnWaitingRecipeSOListChanged(object sender, DeliveryAcid.OnWaitingRecipeSOListChangedEventArgs e)
+    {
+        waitingRecipeSOList = e._waitingRecipeSOList;
+    }
+
     private void Update() 
     {
         spawnRecipeTimer -= Time.deltaTime;
@@ -44,37 +55,22 @@ public class DeliveryManager : MonoBehaviour
         {
             spawnRecipeTimer = spawnRecipeTimerMax;
             
-            if(GameManager.Instance.IsGamePlaying() && waitingRecipeSOList.Count < waitingRecipesMax)
-            {   
-
-                RecipeSO waitingRecipeSO = recipeListSO.recipeSOList[i];
-                
-                waitingRecipeSOList.Add(waitingRecipeSO);
-                
-                // event
-                OnRecipeSpawned?.Invoke(this, EventArgs.Empty);
-
-                i++;
-               
-            }
-
-
-
-
-
-            //为了让他顺序出，小改了一下代码，下面是你的那个
             // 如果目前訂單數小於 waitingRecipesMax  && isPlaying() 隨機生成
-            // if(GameManager.Instance.IsGamePlaying() && waitingRecipeSOList.Count < waitingRecipesMax)
-            // {
-            //     RecipeSO waitingRecipeSO = recipeListSO.recipeSOList[UnityEngine.Random.Range(0, recipeListSO.recipeSOList.Count)];
-            //     waitingRecipeSOList.Add(waitingRecipeSO);
+            if(GameManager.Instance.IsGamePlaying() && waitingRecipeSOList.Count < waitingRecipesMax)
+            {
+                RecipeSO waitingRecipeSO = recipeListSO.recipeSOList[UnityEngine.Random.Range(0, recipeListSO.recipeSOList.Count)];
+                waitingRecipeSOList.Add(waitingRecipeSO);
 
-            //     // event
-            //     OnRecipeSpawned?.Invoke(this, EventArgs.Empty);
-            // }
+                // 傳遞要生成的 Acid
+                OnRecipeSpawned?.Invoke(this, new OnRecipeSpawnedEventArgs
+                {
+                    generateRecipeSO = waitingRecipeSO
+                });
+            }
         }
     }
 
+    
     public void DeliverRecipe(PlateKitchenObj plateKitchenObj)
     {
         
@@ -115,7 +111,7 @@ public class DeliveryManager : MonoBehaviour
                     successfulRecipeAmount++;
 
                     // event
-                    OnRecipeCompleted?.Invoke(this, EventArgs.Empty);
+                    //OnRecipeCompleted?.Invoke(this, EventArgs.Empty);
                     OnRecipeSuccess?.Invoke(this, EventArgs.Empty);
 
                     return;
@@ -126,7 +122,7 @@ public class DeliveryManager : MonoBehaviour
         // no match found
         OnRecipeFailed?.Invoke(this, EventArgs.Empty);
     }
-
+    
     public List<RecipeSO> GetWaitingRecipeSOList()
     {
         return waitingRecipeSOList;

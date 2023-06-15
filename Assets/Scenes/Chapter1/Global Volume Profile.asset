@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 905aecbff72c92d45909e137e7b9bd34, type: 3}
-  m_Name: _Cys-Arg-Gly
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Global Volume Profile
   m_EditorClassIdentifier: 
-  kitchenObjSOList:
-  - {fileID: 11400000, guid: fbc7c42a79222fd4fba3e4742b2a623c, type: 2}
-  recipeName: Cys-Arg-Gly--[  ] error!!!
+  components: []

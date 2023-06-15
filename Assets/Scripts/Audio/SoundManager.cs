@@ -36,20 +36,20 @@ public class SoundManager : MonoBehaviour
         TrashCounter.OnAnyObjTrashedSound += TrashCounter_OnAnyObjTrashedSound;
 
 
-        InCorrectAcid.OnIncorrectPlace += InCorrectAcid_OnIncorectPlace;
-        CorrectAcid.OnCorrectPlace += CorrectAcid_OnCorrectPlace;
+        DeliveryAcid.OnIncorrectPlace += InCorrectAcid_OnIncorectPlace;
+        DeliveryAcid.OnCorrectPlace += CorrectAcid_OnCorrectPlace;
     }
 
 
     /* Acid sound */
     private void InCorrectAcid_OnIncorectPlace(object sender, EventArgs e)
     {
-        InCorrectAcid inCorrectAcid = sender as InCorrectAcid;
+        DeliveryAcid inCorrectAcid = sender as DeliveryAcid;
         PlaySound(audioClipSO.deliveryFailed, inCorrectAcid.transform.position);
     }
     private void CorrectAcid_OnCorrectPlace(object sender, EventArgs e)
     {
-        CorrectAcid correctAcid = sender as CorrectAcid;
+        DeliveryAcid correctAcid = sender as DeliveryAcid;
 
         PlaySound(audioClipSO.deliverySuccess, correctAcid.transform.position);
     }

@@ -1643,7 +1643,7 @@ PrefabInstance:
         type: 3}
       propertyPath: baseCounter
       value: 
-      objectReference: {fileID: 8883122009713665942}
+      objectReference: {fileID: 261822095657584828}
     - target: {fileID: 5828607385721795313, guid: 1564f9004e328754da85b2bdd3e31344,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1749,6 +1749,11 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9076581528455359356, guid: 1564f9004e328754da85b2bdd3e31344,
+        type: 3}
+      propertyPath: m_VersionIndex
+      value: 1696
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 963719713618713735, guid: 1564f9004e328754da85b2bdd3e31344, type: 3}
     m_RemovedGameObjects: []
@@ -1757,7 +1762,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2003271328143539338, guid: 1564f9004e328754da85b2bdd3e31344,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8883122009713665942}
+      addedObject: {fileID: 261822095657584828}
   m_SourcePrefab: {fileID: 100100000, guid: 1564f9004e328754da85b2bdd3e31344, type: 3}
 --- !u!1 &2317434667384677774 stripped
 GameObject:
@@ -1765,7 +1770,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4315611887470106884}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8883122009713665942
+--- !u!114 &261822095657584828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1774,11 +1779,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2317434667384677774}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40fd09c711dc8024d92cd852be55eb57, type: 3}
+  m_Script: {fileID: 11500000, guid: a0a9fd60d88fdca4aaede4dd97782ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   counterTopPoint: {fileID: 3032975004897876432}
   acidDeliveryResultUI: {fileID: 7050753882103354328}
+  correctSugerRecipeSO: {fileID: 11400000, guid: 5603b6333c4624344afacbf01f7fc2f7,
+    type: 2}
+  DestoryGamePrefabs: {fileID: 5907482950395216751}
 --- !u!4 &3032975004897876432 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1293492516112842964, guid: 1564f9004e328754da85b2bdd3e31344,

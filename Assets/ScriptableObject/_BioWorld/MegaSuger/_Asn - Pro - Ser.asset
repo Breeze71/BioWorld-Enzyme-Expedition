@@ -10,10 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 905aecbff72c92d45909e137e7b9bd34, type: 3}
-  m_Name: _Asn - Ala - Thr
+  m_Name: _Asn - Pro - Ser
   m_EditorClassIdentifier: 
   kitchenObjSOList:
-  - {fileID: 11400000, guid: 0e85237307ad8f94b8d3c5031e37bd1a, type: 2}
-  - {fileID: 11400000, guid: 4c7fa959b50ee1143bb93ad0fe034b21, type: 2}
-  - {fileID: 11400000, guid: 07677d4aa24d53f4bb87d6d2c37db59c, type: 2}
-  recipeName: Asn-Ala-Thr-connect
+  - {fileID: 11400000, guid: fbc7c42a79222fd4fba3e4742b2a623c, type: 2}
+  recipeName: Asn - Pro - Ser--[  ] error!!!

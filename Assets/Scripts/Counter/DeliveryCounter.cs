@@ -13,7 +13,7 @@ public class DeliveryCounter : BaseCounter
         Instance = this;
     }
 
-    public override void Interact(PlayerMovement player)
+    /*public override void Interact(PlayerMovement player)
     {
         // only access plates
         if(player.HasKitchenObj() && player.GetKitchenObj().TryGetPlate(out PlateKitchenObj plateKitchenObj))
@@ -23,5 +23,5 @@ public class DeliveryCounter : BaseCounter
 
             player.GetKitchenObj().DestroySelf();
         }
-    }
+    }*/
 }

@@ -10,10 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 905aecbff72c92d45909e137e7b9bd34, type: 3}
-  m_Name: _Thr - His - Ser
+  m_Name: _Cys - Arg - Gly
   m_EditorClassIdentifier: 
   kitchenObjSOList:
-  - {fileID: 11400000, guid: 0e85237307ad8f94b8d3c5031e37bd1a, type: 2}
-  - {fileID: 11400000, guid: 7f7f7a57135cfe94bbeeafdecee36740, type: 2}
-  - {fileID: 11400000, guid: d58f1efa5a016064b9fae981dcc4ec1b, type: 2}
-  recipeName: Thr-His-Ser-connect
+  - {fileID: 11400000, guid: fbc7c42a79222fd4fba3e4742b2a623c, type: 2}
+  recipeName: Cys-Arg-Gly--[  ] error!!!

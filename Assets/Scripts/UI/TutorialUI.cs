@@ -32,7 +32,7 @@ public class TutorialUI : MonoBehaviour
     private void GameManager_OnGameStateChanged(object sender, EventArgs e)
     {
         if(GameManager.Instance.IsCountdownToStartActive())
-        Hide();
+            Hide();
     }
 
     private void InputManager_OnRebindKey(object sender, EventArgs e)
